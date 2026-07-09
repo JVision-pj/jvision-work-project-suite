@@ -30,7 +30,7 @@ for (const viewport of [
   await page.goto(url, { waitUntil: "networkidle" });
   await page.locator(".task-form button").click();
   await page.locator(".ai-panel button").click();
-  await page.locator(".task-card button").first().click();
+  await page.getByRole("button", { name: "送下一步" }).first().click();
   await page.locator(".goals-panel .panel-heading button").click();
 
   const body = await page.locator("body").innerText();
@@ -40,6 +40,7 @@ for (const viewport of [
     hasDemo: body.includes("新增任務"),
     hasBoard: body.includes("專案看板"),
     hasGoal: body.includes("目標與工作負荷"),
+    hasClearWorkflowButtons: body.includes("退回") && body.includes("送下一步"),
     noMojibake: !/[蝞摮撌銝隤鞈嚗�]/.test(body),
     consoleErrors,
     failedResponses,
@@ -59,6 +60,7 @@ if (
       !result.hasDemo ||
       !result.hasBoard ||
       !result.hasGoal ||
+      !result.hasClearWorkflowButtons ||
       !result.noMojibake ||
       result.consoleErrors.length ||
       result.failedResponses.length,
