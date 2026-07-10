@@ -1,4 +1,4 @@
-import { copyFile, mkdir, writeFile } from "node:fs/promises";
+﻿import { copyFile, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import PDFDocument from "pdfkit";
 import QRCode from "qrcode";
@@ -34,8 +34,8 @@ const posterSvg = `<?xml version="1.0" encoding="UTF-8"?>
 <text x="108" y="266" fill="#FF6B5F" font-family="Arial, Microsoft JhengHei, sans-serif" font-size="30" font-weight="700">Jvision Work &amp; Project Suite</text>
 <text x="108" y="356" fill="#20212A" font-family="Arial, Microsoft JhengHei, sans-serif" font-size="66" font-weight="800">工作與專案管理平台</text>
 <text x="108" y="442" fill="#20212A" font-family="Arial, Microsoft JhengHei, sans-serif" font-size="44" font-weight="800">專案、任務、目標、工時與 AI 摘要一次整合</text>
-<text x="108" y="526" fill="#667085" font-family="Arial, Microsoft JhengHei, sans-serif" font-size="30">由專案管理、任務管理與工作管理平台合併成新的展示 Demo。</text>
-<text x="108" y="574" fill="#667085" font-family="Arial, Microsoft JhengHei, sans-serif" font-size="30">原本三個專案保留不刪除，另新增整合版。</text>
+<text x="108" y="526" fill="#667085" font-family="Arial, Microsoft JhengHei, sans-serif" font-size="30">整合專案排程、任務看板、目標追蹤、工時負荷與 AI 摘要，讓跨部門協作更清楚。</text>
+<text x="108" y="574" fill="#667085" font-family="Arial, Microsoft JhengHei, sans-serif" font-size="30"></text>
 
 <rect x="108" y="650" width="1024" height="380" rx="28" fill="#20212A"/>
 <rect x="158" y="706" width="292" height="240" rx="22" fill="#FFFFFF"/>

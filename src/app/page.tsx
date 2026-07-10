@@ -1,4 +1,4 @@
-import { WorkProjectDemo } from "@/components/work-project-demo";
+﻿import { WorkProjectDemo } from "@/components/work-project-demo";
 
 const features = [
   ["專案排程", "管理里程碑、截止日與交付風險，讓每個專案都有清楚節奏。"],
@@ -97,7 +97,7 @@ export default function Home() {
       <section className="source-section" id="source">
         <div className="section-heading">
           <p className="eyebrow">合併來源</p>
-          <h2>原本三個 Demo 保留不刪除，另外新增這個整合版本。</h2>
+          <h2>整合多個工程流程，形成一個更完整的管理工作台。</h2>
         </div>
         <div className="source-grid">
           {sourceProjects.map(([title, text]) => (
